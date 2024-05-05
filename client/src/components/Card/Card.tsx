@@ -1,9 +1,11 @@
+import { TypeCard } from "@/types";
 import styles from "./Card.module.scss";
 
-export const Card = () => {
+export const Card = ({ name, phone_code, capital, region, subregion, nationality, timezones }: TypeCard) => {
     return (
         <div className={styles.card}>
-            <h2>Карточка</h2>
+            <h1>{name}</h1>
+            
         </div>
     )
 }
